@@ -1,0 +1,17 @@
+#compiled source#
+#################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+#zips and stuff#
+################
+.exe
+.zip
+.rar
+.tar
+.gz
+.7z
