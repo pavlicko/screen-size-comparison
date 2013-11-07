@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Screen vs Flat Screen Size Comparison</title>
+	<link rel="stylesheet" href="css/styles2.css" type="text/css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="holder">
+		<div class="bigscreen">giant screen</div>
+		<div class="s50">50 inch</div>
+		<div class="s60">60 inch</div>
+		<div class="s70">70 inch</div>
+		</div>
+        <div id="clickers">
+        <a href="#" rel="s50" >show 50 inch</a>
+        <a href="#" rel="s60" >show 60 inch</a>
+        <a href="#" rel="s70">show 70 inch</a>
+        <a href="#" rel="s120">show big screen</a>
+        </div>
+	</div>
+    <div id="dropper">Screen slides down from here</div>
+ <script type="text/javascript">
+ 	var s50 = $('a[rel="s50"]');
+  	var s60 = $('a[rel="s60"]');
+  	var s70 = $('a[rel="s70"]');
+  	var s120 = $('a[rel="s120"]');
+  $(s50).click(function(){
+    $('.s50').fadeToggle();
+  });
+   $(s60).click(function(){
+    $('.s60').fadeToggle();
+  });
+  $(s70).click(function(){
+    $('.s70').fadeToggle();
+  });
+     $(s120).click(function(){
+    $('.bigscreen').toggleClass('vis');
+  });              
+	   </script>   
+  
+</body>
+</html>
